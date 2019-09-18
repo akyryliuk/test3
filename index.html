@@ -11,13 +11,13 @@
     <!-- feedback -->
     <section class="wrapper-feedback" id="feedback">
         <div class="feedback-section">
-            <button class="feedback-button" onclick="show()"><img src="img/btn-x.png" alt="btn-x"></button>
+            <a class="feedback-button" href="#"><img src="img/btn-x.png" alt="btn-x"></a>
             <div class="feedback-form">
             <div class="feedback-form-name">Обратная связь</div>
                 <form>
-                    <label>Ваше имя *<input type="text" required></label>
-                    <label>Телефон *<input type="tel" required></label>
-                    <label>Email *<input type="email" required></label>
+                    <label>Ваше имя *<input type="text" required placeholder="Поле обязательно для заполнения"></label>
+                    <label>Телефон *<input type="tel" required placeholder="Поле обязательно для заполнения"></label>
+                    <label>Email *<input type="email" required placeholder="Поле обязательно для заполнения"></label>
                     <label>Сообщение<textarea></textarea></label>
                     <button>Отправить</button>
                 </form>
@@ -45,19 +45,12 @@
                         <a href="#" class="telephone-second"> +7(499) 777-77-77</a>
                     </div>
                     <div class="feedback">
-                        <a href="#" class="feedback-link" onclick="show()">Обратная связь</a>
+                        <a href="#feedback" class="feedback-link">Обратная связь</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <script>
-      function show() {
-        let element = document.getElementById("feedback");
-        element.classList.toggle("show")
-      }
-    </script>
     <!-- /header -->
 
     <!-- nav -->
@@ -99,111 +92,115 @@
                 </ul>
             </div>
             <div class="section-content">
-                <div class="section-content-left">
-                    <div class="categories">
-                        <ul class="categories-list">
-                            <li>
-                                <a href="#">Автомобили</a>
-                            </li>
-                            <li>
-                                <a href="#" class="active">Бытовая техника</a>
-                                <ul class="categories-list-items">
-                                    <li><a href="#" class="active-item">Микроволновки</a></li>
-                                    <li><a href="#">Холодильники</a></li>
-                                    <li><a href="#">Посудомоечные машины</a></li>
-                                    <li><a href="#">Чайники</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Мобильная техника</a>
-                            </li>
-                            <li>
-                                <a href="#">Компьютеры</a>
-                            </li>
-                            <li>
-                                <a href="#">Одежда</a>
-                            </li>
-                            <li>
-                                <a href="#">Недвижимость</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exel">
-                        <img src="img/excel.png" alt="excel" title="excel">
-                        <div class="price-list">Прайс-лист</div>
-                    </div>
-                </div>
-                <div class="section-content-right">
-
-                    <div class="section-content-right-image">
-                        <div class="cards">
-                            <div class="card">
-                                <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
-                                <div class="description">Самый клевый чайник, который надо купить!</div>
-                                <div class="price-btn">
-                                    <div class="price">1 900 р.</div>
-                                    <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                 <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
-                                <div class="description">Самый клевый чайник, который надо купить!</div>
-                                <div class="price-btn">
-                                    <div class="price">1 900 р.</div>
-                                    <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
-                                <div class="description">Самый клевый чайник, который надо купить!</div>
-                                <div class="price-btn">
-                                    <div class="price">1 900 р.</div>
-                                    <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
-                                <div class="description">Самый клевый чайник, который надо купить!</div>
-                                <div class="price-btn">
-                                    <div class="price">1 900 р.</div>
-                                    <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
-                                <div class="description">Самый клевый чайник, который надо купить!</div>
-                                <div class="price-btn">
-                                    <div class="price">1 900 р.</div>
-                                    <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pager">
-                            <ul class="pager-list">
-                                <li><a href="#" class="pager-list-link">1</a></li>
-                                <li><a href="#" class="pager-list-link">2</a></li>
-                                <li><a href="#" class="pager-list-link">3</a></li>
-                                <li><a href="#" class="pager-list-link">4</a></li>
-                                <li><a href="#" class="pager-list-link">5</a></li>
-                                <li><a href="#" class="pager-list-link">6</a></li>
-                                <li><a href="#" class="pager-list-link">7</a></li>
+                <div class="section-content-wrapper-left">
+                    <div class="content-left">
+                        <div class="categories">
+                            <ul class="categories-list">
+                                <li>
+                                    <a href="#">Автомобили</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">Бытовая техника</a>
+                                    <ul class="categories-list-items">
+                                        <li><a href="#" class="active-item">Микроволновки</a></li>
+                                        <li><a href="#">Холодильники</a></li>
+                                        <li><a href="#">Посудомоечные машины</a></li>
+                                        <li><a href="#">Чайники</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Мобильная техника</a>
+                                </li>
+                                <li>
+                                    <a href="#">Компьютеры</a>
+                                </li>
+                                <li>
+                                    <a href="#">Одежда</a>
+                                </li>
+                                <li>
+                                    <a href="#">Недвижимость</a>
+                                </li>
                             </ul>
                         </div>
+                        <div class="exel">
+                            <img src="img/excel.png" alt="excel" title="excel">
+                            <div class="price-list">Прайс-лист</div>
+                        </div>
                     </div>
-                    <div class="section-content-right-text">
-                        <div class="about-studio">
-                            Компания «Пиксель Плюс» существует более 6 лет, за это время мы
-                            принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя
-                            профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников
-                            работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы:
-                            неразделённой любви, ухода молодости, угасания души. </div>
-                        <div class="about-studio">
-                            Одним из основных направлений работ нашей компании является поисковое продвижение сайтов,
-                            на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000
-                            поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же
-                            применяем собственные уникальные разработки в области SEO продвижения. На данный момент
-                            отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно
-                            работающих в нашем московском офисе.
+                </div>
+
+                <div class="section-content-wrapper-right">
+                    <div class="content-right">
+                        <div class="content-right-image">
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
+                                    <div class="description">Самый клевый чайник, который надо купить!</div>
+                                    <div class="price-btn">
+                                        <div class="price">1 900 р.</div>
+                                        <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                     <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
+                                    <div class="description">Самый клевый чайник, который надо купить!</div>
+                                    <div class="price-btn">
+                                        <div class="price">1 900 р.</div>
+                                        <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
+                                    <div class="description">Самый клевый чайник, который надо купить!</div>
+                                    <div class="price-btn">
+                                        <div class="price">1 900 р.</div>
+                                        <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
+                                    <div class="description">Самый клевый чайник, который надо купить!</div>
+                                    <div class="price-btn">
+                                        <div class="price">1 900 р.</div>
+                                        <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img/nophoto.png" alt="nophoto" title="nophoto" class="nophoto">
+                                    <div class="description">Самый клевый чайник, который надо купить!</div>
+                                    <div class="price-btn">
+                                        <div class="price">1 900 р.</div>
+                                        <a href="#" class="buy"><img src="img/buy.png" alt="buy" title="buy"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pager">
+                                <ul class="pager-list">
+                                    <li><a href="#" class="pager-list-link">1</a></li>
+                                    <li><a href="#" class="pager-list-link">2</a></li>
+                                    <li><a href="#" class="pager-list-link">3</a></li>
+                                    <li><a href="#" class="pager-list-link">4</a></li>
+                                    <li><a href="#" class="pager-list-link">5</a></li>
+                                    <li><a href="#" class="pager-list-link">6</a></li>
+                                    <li><a href="#" class="pager-list-link">7</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-right-text">
+                            <div class="about-studio">
+                                Компания «Пиксель Плюс» существует более 6 лет, за это время мы
+                                принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя
+                                профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников
+                                работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы:
+                                неразделённой любви, ухода молодости, угасания души. </div>
+                            <div class="about-studio">
+                                Одним из основных направлений работ нашей компании является поисковое продвижение сайтов,
+                                на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000
+                                поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же
+                                применяем собственные уникальные разработки в области SEO продвижения. На данный момент
+                                отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно
+                                работающих в нашем московском офисе.
+                            </div>
                         </div>
                     </div>
                 </div>
